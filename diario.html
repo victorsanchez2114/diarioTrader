@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="diario.css">
+<title>Registro de Operaciones Financieras</title>
+
+
+
+</head>
+<body>
+    <h1 class="titulo">Mi diario de Trader</h1>
+<h2>Registro de Operaciones Financieras</h2>
+<form id="operacionForm">
+    <label for="fechaHora">Fecha y Hora:</label>
+    <input type="datetime-local" id="fechaHora" name="fechaHora" required>
+
+    <label for="instrumento">Instrumento:</label>
+    <input type="text" id="instrumento" name="instrumento" required>
+
+    <label for="tipoOperacion">Tipo de Operación:</label>
+    <select id="tipoOperacion" name="tipoOperacion" required>
+        <option value="Compra">Compra</option>
+        <option value="Venta">Venta</option>
+    </select>
+
+    <label for="precioEntrada">Precio de Entrada:</label>
+    <input type="text" id="precioEntrada" name="precioEntrada" required>
+
+    <label for="precioSalida">Precio de Salida:</label>
+    <input type="text" id="precioSalida" name="precioSalida" required>
+
+    <label for="tamanoPosicion">Tamaño de la Posición:</label>
+    <input type="text" id="tamanoPosicion" name="tamanoPosicion" required>
+
+    <label for="razon">Razón para Abrir la Operación:</label>
+    <textarea id="razon" name="razon" rows="4" required></textarea>
+
+    <label for="estrategia">Estrategia Utilizada:</label>
+    <textarea id="estrategia" name="estrategia" rows="4" required></textarea>
+
+    <label for="emociones">Emociones o Pensamientos durante la Operación:</label>
+    <textarea id="emociones" name="emociones" rows="4" required></textarea>
+
+    <label for="resultado">Resultado de la Operación:</label>
+    <input type="text" id="resultado" name="resultado" required>
+
+    <input type="submit" value="Guardar">
+</form>
+
+<h2>Operaciones Registradas</h2>
+<table id="operacionesTable">
+    <tr>
+        <th>Fecha y Hora</th>
+        <th>Instrumento</th>
+        <th>Tipo de Operación</th>
+        <th>Precio de Entrada</th>
+        <th>Precio de Salida</th>
+        <th>Tamaño de la Posición</th>
+        <th>Razón</th>
+        <th>Estrategia</th>
+        <th>Emociones</th>
+        <th>Resultado</th>
+    </tr>
+</table>
+<script src="diario.js"></script>
+
+ 
+   
+</body>
+</html>
