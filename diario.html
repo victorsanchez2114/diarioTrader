@@ -41,7 +41,13 @@
     <input type="datetime-local" id="fechaHora" name="fechaHora" required>
 
     <label for="instrumento">Instrumento:</label>
-    <input type="text" id="instrumento" name="instrumento" required>
+    <select name="tipoInstrumento" id="tipoInstrumento"required>
+        <option value="XAUUSD">XAUUSD</option>
+        <option value="USD/CHF">USD/CHF</option>
+        <option value="US30">US30</option>
+        <OPtion value="GBP/USD">GBP/USD</OPtion>
+    </select >
+    <!--<input type="text" id="instrumento" name="instrumento" required>-->
 
     <label for="tipoOperacion">Tipo de Operación:</label>
     <select id="tipoOperacion" name="tipoOperacion" required>
